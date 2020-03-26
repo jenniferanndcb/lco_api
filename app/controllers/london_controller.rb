@@ -2,7 +2,7 @@ class LondonController < ApplicationController
 
   def index 
     @londons = London.all 
-    render json: @london
+    render json: @londons
   end 
 
   def show
