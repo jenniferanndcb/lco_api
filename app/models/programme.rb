@@ -1,0 +1,3 @@
+class Programme < ApplicationRecord
+end
+

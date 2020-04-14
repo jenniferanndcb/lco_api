@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_25_194755) do
+ActiveRecord::Schema.define(version: 2020_04_14_162421) do
 
   create_table "londons", force: :cascade do |t|
     t.text "region_name"
@@ -19,6 +19,12 @@ ActiveRecord::Schema.define(version: 2020_03_25_194755) do
     t.integer "value"
     t.integer "count"
     t.integer "denominator"
+  end
+
+  create_table "programmes", force: :cascade do |t|
+    t.string "title"
+    t.string "url"
+    t.string "description"
   end
 
 end
